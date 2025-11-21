@@ -23,20 +23,3 @@ print("Length of Tuple is:", len(Tuple))
 print("Index of 30 in Tuple is:", Tuple.index(30))
 print("Count of 20 in Tuple is:", Tuple.count(20))
 
-#Appending elements from Tuple to a List and creating a new Tuple
-for i in Tuple:
-    myTuple.append(i)
-print("New Tuple after appending elements from original Tuple:", myTuple)
-myTuple.append(60)
-Tuple = tuple(myTuple)
-print("New Tuple:", Tuple)
-
-#Set
-mySet = {10, 20, 30, 40, 50}
-print("Original Set:", mySet)
-mySet.add(60)
-print("Set after add():", mySet)
-mySet.remove(20)
-print("Set after remove():", mySet)
-mySet.discard(100)
-print("Set after discard():", mySet)
