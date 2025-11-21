@@ -31,3 +31,17 @@ myTuple.append(60)
 Tuple = tuple(myTuple)
 print("New Tuple:", Tuple)
 
+#Set
+mySet = {10, 20, 30, 40, 50}
+print("Original Set:", mySet)
+mySet.add(60)
+print("Set after add():", mySet)
+mySet.remove(20)
+print("Set after remove():", mySet)
+mySet.discard(100) #no error while removing non-existing element
+print("Set after discard():", mySet)
+yourSet = {40, 50, 60, 70, 80}
+unionSet = mySet.union(yourSet)
+print("Union of two Sets:", unionSet)
+intersectionSet = mySet.intersection(yourSet)
+print("Intersection of two Sets:", intersectionSet)
