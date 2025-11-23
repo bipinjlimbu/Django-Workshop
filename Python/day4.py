@@ -45,3 +45,25 @@ unionSet = mySet.union(yourSet)
 print("Union of two Sets:", unionSet)
 intersectionSet = mySet.intersection(yourSet)
 print("Intersection of two Sets:", intersectionSet)
+
+#Dictionary
+myDict = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}
+print("Original Dictionary:", myDict)
+print("Value for key 'name':", myDict["name"])
+myDict["age"] = 31
+print("Dictionary after updating age:", myDict)
+myDict["profession"] = "Engineer"
+print("Dictionary after adding profession:", myDict)
+myDict.pop("city")
+print("Dictionary after pop():", myDict)
+myDict.popitem()
+print("Dictionary after popitem():", myDict)
+print("Keys in Dictionary:", myDict.keys())
+print("Values in Dictionary:", myDict.values())
+
+for key, value in myDict.items():
+    print(f"{key}: {value}")
