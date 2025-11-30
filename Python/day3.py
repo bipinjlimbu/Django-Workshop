@@ -59,6 +59,7 @@ count = 0
 for i in range(1,n+1):
     if n==0 or n==1:
         break
+    
     if n%i == 0:
         count += 1
 
