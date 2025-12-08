@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect
 from my_app.models import student
 
 def index_page(request):
-    return render(request, 'main/index_page.html')
+    students = student.objects.all()
+    return render(request, 'main/index_page.html', {'students': students})
 
 def form_page(request):
     if request.method == 'POST':
