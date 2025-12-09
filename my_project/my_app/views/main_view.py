@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from my_app.models import student
 
 def index_page(request):
@@ -25,3 +25,8 @@ def form_page(request):
         return redirect('index_page')
     
     return render(request, 'main/student_form.html')
+
+def update_page(request, student_id):
+    get_object_or_404(student, id=student_id)
+    stud = student.objects.get(id=student_id)
+    return render(request, 'main/update_form.html', {'student': stud})

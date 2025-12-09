@@ -12,9 +12,9 @@
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="text-2xl font-bold mb-6 text-gray-700">Student Records</h1>
-    <button class="mb-4 px-4 py-2 font-medium text-white bg-green-600 rounded-md hover:bg-green-500 transition" onclick="window.location.href='{% url 'form_page' %}'">
+    <a href="/form"><button class="mb-4 px-4 py-2 font-medium text-white bg-green-600 rounded-md hover:bg-green-500 transition">
         Add New Student
-    </button>
+    </button></a>
 
     <table class="min-w-full divide-y divide-gray-200">
         <thead>
@@ -40,9 +40,9 @@
                 <td class="px-6 py-4 whitespace-nowrap">{{ s.phone }}</td>
                 <td class="px-6 py-4 whitespace-nowrap">{{ s.fee }} </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <button class="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 transition">
+                    <a href="/update/{{ s.id }}/"><button class="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500 transition">
                         Edit
-                    </button>
+                    </button></a>
                     <button class="ml-2 px-4 py-2 font-medium text-white bg-red-600 rounded-md hover:bg-red-500 transition">
                         Delete
                     </button>
