@@ -22,7 +22,7 @@ def form_page(request):
             fee=fee,
             description=description
         )
-        return redirect('index_page')
+        return redirect('index')
     
     return render(request, 'main/student_form.html')
 
